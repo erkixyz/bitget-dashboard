@@ -39,9 +39,11 @@ wsClient.on('exception', (data) => {
 });
 
 // Subscribe to public data streams
-// wsClient.subscribeTopic('SPOT', 'ticker', 'BTCUSDT');
+wsClient.subscribeTopic('USDT-FUTURES', 'ticker', 'BTCUSDT');
+wsClient.subscribeTopic('USDT-FUTURES', 'ticker', 'ETHUSDT');
+wsClient.subscribeTopic('USDT-FUTURES', 'ticker', 'BNBUSDT');
 
 // Subscribe to private data streams (requires authentication)
 // wsClient.subscribeTopic('USDT-FUTURES', 'account');
 // wsClient.subscribeTopic('USDT-FUTURES', 'positions');
-wsClient.subscribeTopic('USDT-FUTURES', 'orders');
+// wsClient.subscribeTopic('USDT-FUTURES', 'orders');
