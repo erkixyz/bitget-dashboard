@@ -78,14 +78,7 @@ client.subscribe(
 
 // Keep the process running and show connection status
 function keepAlive() {
-  let counter = 0;
-  setInterval(() => {
-    counter++;
-    if (counter % 30 === 0) { // Every 30 seconds
-      console.log(`\n🔍 Connection status check (${new Date().toLocaleTimeString()}):`);
-      console.log(`  ${account.name}: ${client.isConnected ? '🟢 Connected' : '🔴 Disconnected'}`);
-    }
-  }, 1000);
+  setInterval(() => {}, 1000);
 }
 
 // Handle graceful shutdown
